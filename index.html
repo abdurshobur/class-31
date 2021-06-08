@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"> 
+<!-- google fonts  -->
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!--  <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+ <!-- <link rel="stylesheet" href="./css/style.css"> -->
+<title>Title</title>
+</head>
+<body>
+
+  <style>
+    body,h1,h2,h3,h4,h5,h6,p,button,a{
+    font-family: 'Work Sans', sans-serif;
+}
+img{max-width: 100%;}
+/* section-one */
+.section-one{
+    background: url(https://images.unsplash.com/photo-1529101091764-c3526daf38fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1191&q=80) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.section-one::after{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+.section-one input{
+    padding: 18px 20px !important;
+}
+.section-one button{
+    background: #5ba533;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #fff;
+}
+/* ------------------------------------------------------------------------- */
+
+
+
+/* section-three */
+.section-three{
+    background: #f7f9ff;
+
+}
+.sec-three-text .p{
+    font-size:25px ;
+    line-height: 2.7rem;
+}
+
+/* ------------------------------------------------- */
+/* section-four */
+.section-four{}
+.section-four .sec-4-area{
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.section-four .sec-4-img {
+    width: 40%;
+    overflow: hidden;
+    
+}
+.section-four .sec-4-img img{
+    width: auto !important;
+    position: relative;
+    max-width: inherit;
+    left: -14px;
+    height: 100%;
+}
+.section-four .sec-4-text {
+    width: 60%;
+    padding: 0 13px;
+}
+.section-four .sec-4-text p{
+    font-size: 15px;
+}
+/* --------------------------------------------------------- */
+
+/* section-five  */
+.sec-5-imges{
+    height: 300px;
+    overflow: hidden;
+}
+.sec-5-imges img{
+    top: -142px;
+    position: relative;
+    width: 100%;
+    height: inherit;
+}
+.sec-5-imges a{
+    position: relative;
+    display: block;
+}
+.sec-5-imges a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(98, 120, 213, .7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.sec-5-imges a:hover::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ------------------------------------------------------ */
+/* section-six  */
+.section-six{
+    background: #f7f9ff;
+}
+.section-six .sec-six-items{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.section-six .sec-six-items ul{
+    list-style: none;
+    padding: 0;
+}
+.section-six .sec-six-items ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    color: #777;o
+}
+.section-six .sec-six-items ul li i{
+    color: #657be0;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    width: 40px;
+} 
+.section-six .sec-six-btn a{
+    color: #657be0;
+    border:2px solid #657be0;
+    padding: 14px 30px;
+    font-size: 22;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.3);
+    
+}
+.section-six .sec-six-btn a:hover{
+    color: #fff;
+    background: #657be0;
+}
+
+/* ...................................................................... */
+.secton-seven .sec-3-user-info {
+
+
+}
+.secton-seven .user-img img{
+    width: 100px;
+    
+}
+.secton-seven .user-details{
+    position: relative;
+    top: 7px;
+}
+.secton-seven i{
+    font-size: 70px;
+}
+
+
+.section-eight{
+    background: #f7f9ff;
+}
+.sec-eight-card img{
+    width: 179px;
+    height: auto;
+    margin-top: -107px;
+}
+
+  </style>
+
+
+  <!-- nav begin  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+      <a class="navbar-brand" href="#"><i class="fas fa-mobile-android-alt me-2 bg-primary rounded p-2 text-white"></i>AppAMP Theme</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Live Demo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Demo Blocks
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+      
+
+      </div>
+    </div>
+  </nav>
+<!-- nav-end  -->
+
+<!-- section-one  -->
+  <section class="section-one">
+    <div class="text-content w-50 mx-auto text-center text-white">
+      <h5 class="mb-4">It is created to watch your health</h5>
+      <h2 class="mb-5">Health Tracker App</h2>
+      <form action="">
+      <div class="row">
+        <div class="col-7">
+          <input type="text" class="form-control form-control-lg" placeholder="Inter Your Number" >
+        </div>
+        <div class="col-5">
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-outline-info ">Gey App</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+  </section>
+
+  <!-- section-two number countert  -->
+<section class="section-two pt-5 pb-5 text-center">
+    <div class="container">
+      <div class="row">
+      <div class="col-3">
+        <p class="h2 fw-bold">100+</p>
+        <p class="text-muted">Health Programs</p>
+      </div>
+      <div class="col-3">
+        <p class="h2 fw-bold">50+</p>
+        <p class="text-muted">Individual Parameters</p>
+      </div>
+      <div class="col-3">
+        <p class="h2 fw-bold">2500+</p>
+        <p class="text-muted">Active User</p>
+      </div>
+      <div class="col-3">
+        <p class="h2 fw-bold">10 X</p>
+        <p class="text-muted h6">Traing Efficiency</p>
+      </div>
+
+    </div>
+    </div>
+</section>
+
+<!-- section three  -->
+<section class="section-three py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-8">
+        <div class="sec-three-text px-2">
+        <h1 class="mb-4">Active Golas To Improve Health</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eligendi est esse fugit corporis quam voluptatum nemo harum, tempore ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis?</p>
+      </div>
+      </div>
+      <div class="col-4">
+        <img class="rounded" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- header one -->
+<header class="header-one py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="mb-4">Learn More About Our Application</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- section four  -->
+<section class="section-four">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-4">
+        <div class="sec-4-area d-flex align-items-center border rounded  mb-3">
+          <div class="sec-4-img h-100">
+            <img src="https://images.unsplash.com/photo-1601342631712-1e491a7e7c30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </div>
+          <div class="sec-4-text ms-2">
+            <h4>Heart Point</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eveniet! Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sec-4-area d-flex align-items-center border rounded mb-3">
+          <div class="sec-4-img h-100">
+            <img src="https://images.unsplash.com/photo-1562184552-d33c64b991ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </div>
+          <div class="sec-4-text ms-2">
+            <h4>Heart Point</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eveniet! Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sec-4-area d-flex align-items-center border rounded mb-3">
+          <div class="sec-4-img h-100">
+            <img src="https://images.unsplash.com/photo-1601342631712-1e491a7e7c30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </div>
+          <div class="sec-4-text ms-2">
+            <h4>Heart Point</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eveniet! Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sec-4-area d-flex align-items-center border rounded my-3">
+          <div class="sec-4-img h-100">
+            <img src="https://images.unsplash.com/photo-1601342631712-1e491a7e7c30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </div>
+          <div class="sec-4-text ms-2">
+            <h4>Heart Point</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eveniet! Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sec-4-area d-flex align-items-center border rounded  my-3">
+          <div class="sec-4-img h-100">
+            <img src="https://images.unsplash.com/photo-1601342631712-1e491a7e7c30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </div>
+          <div class="sec-4-text ms-2">
+            <h4>Heart Point</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eveniet! Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sec-4-area d-flex align-items-center border rounded  my-3">
+          <div class="sec-4-img h-100">
+            <img src="https://images.unsplash.com/photo-1601342631712-1e491a7e7c30?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </div>
+          <div class="sec-4-text ms-2">
+            <h4>Heart Point</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eveniet! Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- header two -->
+<header class="header-two py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2 class="mb-4">Look at Our Application</h2>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- section-five  -->
+<section class="section-five py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-4 mb-4">
+        <div class="sec-5-imges">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1585236849667-fbf263ee748a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-4 mb-4">
+        <div class="sec-5-imges">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1585236849667-fbf263ee748a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-4 mb-4">
+        <div class="sec-5-imges">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1585236849667-fbf263ee748a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-4 mb-4">
+        <div class="sec-5-imges">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1585236849667-fbf263ee748a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-4 mb-4">
+        <div class="sec-5-imges">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1585236849667-fbf263ee748a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="col-4 mb-4">
+        <div class="sec-5-imges">
+          <a href="#">
+            <img src="https://images.unsplash.com/photo-1585236849667-fbf263ee748a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- section-six -->
+<section class="section-six py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h2>Start using our app today</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque nam </p>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-6">
+        <div class="sec-six-items bg-white p-3 px-4 ">
+          <h1 class="my-4">Stater Plan</h1>
+          <h5 class="text-muted mb-3">For Simple User</h5>
+          <ul class="mb-4 ms-3">
+            <li> <i class="fas fa-check"></i>Heart Point</li>
+            <li><i class="fas fa-check"></i>Move Minutes</li>
+            <li><i class="fas fa-times"></i>Fitness Assessment</li>
+            <li><i class="fas fa-times"></i>Nutional Sucess</li>
+          </ul>
+          <div class="sec-six-btn text-center my-4">
+            <a class="btn btn-outline-info" href="#">Get Access Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="sec-six-items bg-white p-3 px-4">
+          <h1 class="my-4">Stater Plan</h1>
+          <h5 class="text-muted mb-3">For Simple User</h5>
+          <ul class="mb-4 ms-3">
+            <li> <i class="fas fa-check"></i>Heart Point</li>
+            <li><i class="fas fa-check"></i>Move Minutes</li>
+            <li><i class="fas fa-times"></i>Fitness Assessment</li>
+            <li><i class="fas fa-times"></i>Nutional Sucess</li>
+          </ul>
+          <div class="sec-six-btn text-center my-4">
+            <a class="btn btn-outline-info" href="#">Get Access Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- section seven  -->
+<section class="secton-seven pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="sec-sev-text w-75 mx-auto">
+          <h5 class="text-muted text-center mt-5">Feedbak form our users</h5>
+          <h2 class="text-center my-5">What do user say about our Application</h2>
+          <span class="text-center d-block mb-4"><i class="fas fa-quote-left text-muted"></i></span>
+          <div class="sec-3-user-info justify-content-center d-flex">
+            <div class="user-img  ">
+              <img class="rounded-circle " src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=812&q=80" alt="">
+            </div>
+            <div class="user-details  text-start ms-2 mb-5">
+              <h5>Joson Doe</h5>
+              <p>User</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- section eight --> 
+<section class="section-eight py-5">
+    <div class="container">
+      <div class="row pb-5">
+        <div class="col">
+          <div class="row">
+            <h2 class="py-5">Our Team And History</h2>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error quod libero ab molestiae provident accusantium unde enim quaerat, voluptas sequi! Accusamus, maxime. Pariatur quas ipsa soluta temporibus dolorum labore obcaecati?
+            </div>
+            <div class="col-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error quod libero ab molestiae provident accusantium unde enim quaerat, voluptas sequi! Accusamus, maxime. Pariatur quas ipsa soluta temporibus dolorum labore obcaecati?
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-3">
+          <div class="sec-eight-card shadow rounded p-3 mt-5">
+          <img class="rounded-pill shadow" src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=812&q=80" alt="">
+          <div class="card-bdy">
+            <h3>Jason Doe</h3>
+            <h4>Programer</h4>
+            <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta?</p>
+            <a class="btn fw-bold btn-light shadow my-2" href="#">Website</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="sec-eight-card shadow rounded p-3 mt-5">
+          <img class="rounded-pill shadow" src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=812&q=80" alt="">
+          <div class="card-bdy">
+            <h3>Jason Doe</h3>
+            <h4>Programer</h4>
+            <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta?</p>
+            <a class="btn fw-bold btn-light shadow my-2" href="#">Website</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="sec-eight-card shadow rounded p-3 mt-5">
+          <img class="rounded-pill shadow" src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=812&q=80" alt="">
+          <div class="card-bdy">
+            <h3>Jason Doe</h3>
+            <h4>Programer</h4>
+            <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta?</p>
+            <a class="btn fw-bold btn-light shadow my-2" href="#">Website</a>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="sec-eight-card shadow rounded p-3 mt-5">
+          <img class="rounded-pill shadow" src="https://images.unsplash.com/photo-1485206412256-701ccc5b93ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=812&q=80" alt="">
+          <div class="card-bdy">
+            <h3>Jason Doe</h3>
+            <h4>Programer</h4>
+            <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta?</p>
+            <a class="btn fw-bold btn-light shadow my-2" href="#">Website</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- section nine  -->
+<section class="section-nine py-5"> 
+  <div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h5>We need to know your oppnion</h5>
+      <h2 class="py-4">Write to us We will contact you</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+          <section>
+            <div class="container py-4">
+              <div class="row ">
+                <div class="col-lg-7 p-4 shadow mx-auto d-flex justify-content-center flex-column border">
+                  <h3 class="text-center">Send us a Message</h3>
+                  <form role="form" id="contact-form" method="post" autocomplete="off">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label>First Name</label>
+                          <div class="input-group mb-4">
+                            <input class="form-control" placeholder="" aria-label="First Name..." type="text" >
+                          </div>
+                        </div>
+                        <div class="col-md-6 ps-2">
+                          <label>Last Name</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" aria-label="Last Name..." >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-4">
+                        <label>Email Address</label>
+                        <div class="input-group">
+                          <input type="email" class="form-control" placeholder="" >
+                        </div>
+                      </div>
+                      <div class="form-group mb-4">
+                        <label>Your message</label>
+                        <textarea name="message" class="form-control" id="message" rows="4"></textarea>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-check form-switch mb-4">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">I agree to the <a href="javascript:;" class="text-dark"><u>Terms and Conditions</u></a>.</label>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+  </div>
+
+  </div>
+
+</section>
+
+<!-- section-10  -->
+<section class="section-ten py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <h5>It is created to wathch your heath</h5>
+        <h2 class="py-4">Get Our app for Andorid and iPhone</h2>
+        <a class="btn btn-outline-success me-4" href="#"><i class="fab fa-apple me-2"></i>Apple Stor</a>
+        <a class="btn btn-success" href="#"><i class="fab fa-google-play me-2"></i>Google Play</a>
+        <div class="row justify-content-center">
+          <img class="w-75 mt-4" src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-secondary p-4 text-center">
+  <p class="m-0">Coppy right all right is reserved</p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
